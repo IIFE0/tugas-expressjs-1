@@ -5,7 +5,7 @@ const app = express()
 const port = process.env.PORT || 8080
 
 const router = require("./routes")
-app.use("/biodata", router)
+app.use("/", router)
 
 app.listen(port, () => {
   console.log("Listening on http://localhost:%s", port)

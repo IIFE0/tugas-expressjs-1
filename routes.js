@@ -13,7 +13,7 @@ router.use(function timeLog(req, res, next) {
 router.use(express.json())
 router.use(express.urlencoded({ extended: true }))
 
-router.post("/", (req, res) => {
+router.post("/biodata", (req, res) => {
   const nama = req.body.nama
   const tempatLahir = req.body.tempatLahir
   const tanggalLahir = req.body.tanggalLahir
@@ -27,7 +27,7 @@ router.post("/", (req, res) => {
   })
 })
 
-router.get("/", (req, res) => {
+router.get("/biodata", (req, res) => {
   const nama = req.query.nama
   const tempatLahir = req.query.tempatLahir
   const tanggalLahir = req.query.tanggalLahir
